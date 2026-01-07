@@ -1,3 +1,6 @@
+#Analisis Klasifikasi Gambar Menggunakan Convolutional Neural Network (CNN) pada Dataset Intel Image Classification
+#Kelompok 5 (Ary Setyoko, Kalimi, Purnama Nugroho, Muhamad Nur Fuat
+
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Activation, Flatten, Dense, Dropout
@@ -157,4 +160,5 @@ print(f"Model berhasil disimpan ke: {model_save_path}")
 class_indices = train_generator.class_indices
 with open('class_indices.json', 'w') as f:
     json.dump(class_indices, f)
+
 print("Class indices berhasil disimpan.")
